@@ -33,15 +33,15 @@ int main() {
   cudaMemcpy(dvec, vec, n * sizeof(float), cudaMemcpyHostToDevice);
   cudaMemcpy(dvec2, vec2, n * sizeof(float), cudaMemcpyHostToDevice);
   auto t1 = high_resolution_clock::now();
-  vAddGPU<<<40, 256>>>(vec, vec2, ans, n);
+  vAddGPU<<<40, 256>>>(dvec, dvec2, dans, n);
   cudaDeviceSynchronize();
   auto t2 = high_resolution_clock::now();
   cudaMemcpy(ans, dans, n * sizeof(float), cudaMemcpyDeviceToHost);
   duration<double, milli> ms_double = t2 - t1;
   cout << "Tiempo: " << ms_double.count() << " ms\n";
   cudaFree(dvec);
-  cudaFree(dvec);
-  cudaFree(dvec);
+  cudaFree(dvec2);
+  cudaFree(dans);
   delete[] vec;
   delete[] vec2;
   delete[] ans;
