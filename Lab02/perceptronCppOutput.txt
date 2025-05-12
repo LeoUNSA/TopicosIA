@@ -1,386 +1,386 @@
 AND Perceptron:
-Pesos iniciales: 8 7 	 Bias inicial: 1
-
-Epoch - 0:
-Input: 0 , 0
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 8 7 
-Bias: 0.5
-Input: 0 , 1
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 8 6.5 
-Bias: 0
-Input: 1 , 0
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 7.5 6.5 
-Bias: -0.5
-Input: 1 , 1
-Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7.5 6.5 
-Bias: -0.5
-
+Pesos iniciales: 9 2 	 Bias inicial: 1
 
 Epoch - 1:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7.5 6.5 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 9 2 
+Bias: 0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 7.5 6 
-Bias: -1
+Pesos actualizados: 9 1.5 
+Bias: 0
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 7 6 
-Bias: -1.5
+Pesos actualizados: 8.5 1.5 
+Bias: -0.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -1.5
+Pesos actualizados: 8.5 1.5 
+Bias: -0.5
 
 
 Epoch - 2:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -1.5
+Pesos actualizados: 8.5 1.5 
+Bias: -0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 7 5.5 
-Bias: -2
+Pesos actualizados: 8.5 1 
+Bias: -1
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 6.5 5.5 
-Bias: -2.5
+Pesos actualizados: 8 1 
+Bias: -1.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 6.5 5.5 
-Bias: -2.5
+Pesos actualizados: 8 1 
+Bias: -1.5
 
 
 Epoch - 3:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 6.5 5.5 
-Bias: -2.5
+Pesos actualizados: 8 1 
+Bias: -1.5
 Input: 0 , 1
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 6.5 5 
-Bias: -3
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 8 1 
+Bias: -1.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 6 5 
-Bias: -3.5
+Pesos actualizados: 7.5 1 
+Bias: -2
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 6 5 
-Bias: -3.5
+Pesos actualizados: 7.5 1 
+Bias: -2
 
 
 Epoch - 4:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 6 5 
-Bias: -3.5
+Pesos actualizados: 7.5 1 
+Bias: -2
 Input: 0 , 1
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 6 4.5 
-Bias: -4
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 7.5 1 
+Bias: -2
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 5.5 4.5 
-Bias: -4.5
+Pesos actualizados: 7 1 
+Bias: -2.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5.5 4.5 
-Bias: -4.5
+Pesos actualizados: 7 1 
+Bias: -2.5
 
 
 Epoch - 5:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5.5 4.5 
-Bias: -4.5
+Pesos actualizados: 7 1 
+Bias: -2.5
 Input: 0 , 1
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 5.5 4 
-Bias: -5
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 7 1 
+Bias: -2.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6.5 1 
+Bias: -3
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6.5 1 
+Bias: -3
 
 
 Epoch - 6:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6.5 1 
+Bias: -3
 Input: 0 , 1
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6.5 1 
+Bias: -3
 Input: 1 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 6 1 
+Bias: -3.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6 1 
+Bias: -3.5
 
 
 Epoch - 7:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6 1 
+Bias: -3.5
 Input: 0 , 1
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 6 1 
+Bias: -3.5
 Input: 1 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 5.5 1 
+Bias: -4
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5.5 1 
+Bias: -4
 
 
 Epoch - 8:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5.5 1 
+Bias: -4
 Input: 0 , 1
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5.5 1 
+Bias: -4
 Input: 1 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 5 1 
+Bias: -4.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5 1 
+Bias: -4.5
 
 
 Epoch - 9:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5 1 
+Bias: -4.5
 Input: 0 , 1
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 5 1 
+Bias: -4.5
 Input: 1 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 4.5 1 
+Bias: -5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 5 4 
-Bias: -5.5
+Pesos actualizados: 4.5 1 
+Bias: -5
+
+
+Epoch - 10:
+Input: 0 , 0
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 4.5 1 
+Bias: -5
+Input: 0 , 1
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 4.5 1 
+Bias: -5
+Input: 1 , 0
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 4.5 1 
+Bias: -5
+Input: 1 , 1
+Valor predecido: 1	Valor esperado: 1	Error: 0:
+Pesos actualizados: 4.5 1 
+Bias: -5
 
 
 ----------------------------------------
 OR Perceptron:
-Pesos iniciales: 7 6 	 Bias inicial: 0
-
-Epoch - 0:
-Input: 0 , 0
-Valor predecido: 1	Valor esperado: 0	Error: -1:
-Pesos actualizados: 7 6 
-Bias: -0.5
-Input: 0 , 1
-Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
-Input: 1 , 0
-Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
-Input: 1 , 1
-Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
-
+Pesos iniciales: 2 3 	 Bias inicial: 3
 
 Epoch - 1:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 2.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2.5
 
 
 Epoch - 2:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 2
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 2
 
 
 Epoch - 3:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 1.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1.5
 
 
 Epoch - 4:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 1
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 1
 
 
 Epoch - 5:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0.5
 
 
 Epoch - 6:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
+Bias: 0
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
-Bias: -0.5
+Pesos actualizados: 2 3 
+Bias: 0
 
 
 Epoch - 7:
 Input: 0 , 0
-Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
+Valor predecido: 1	Valor esperado: 0	Error: -1:
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 
 
 Epoch - 8:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 
 
 Epoch - 9:
 Input: 0 , 0
 Valor predecido: 0	Valor esperado: 0	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 0 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 0
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
 Bias: -0.5
 Input: 1 , 1
 Valor predecido: 1	Valor esperado: 1	Error: 0:
-Pesos actualizados: 7 6 
+Pesos actualizados: 2 3 
+Bias: -0.5
+
+
+Epoch - 10:
+Input: 0 , 0
+Valor predecido: 0	Valor esperado: 0	Error: 0:
+Pesos actualizados: 2 3 
+Bias: -0.5
+Input: 0 , 1
+Valor predecido: 1	Valor esperado: 1	Error: 0:
+Pesos actualizados: 2 3 
+Bias: -0.5
+Input: 1 , 0
+Valor predecido: 1	Valor esperado: 1	Error: 0:
+Pesos actualizados: 2 3 
+Bias: -0.5
+Input: 1 , 1
+Valor predecido: 1	Valor esperado: 1	Error: 0:
+Pesos actualizados: 2 3 
 Bias: -0.5
 

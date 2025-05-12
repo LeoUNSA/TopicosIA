@@ -1,0 +1,17 @@
+AND Perceptron:
+Pesos: [[1. 1.]]
+Bias: [-1.]
+Entrada: [0 0] 	Predicción: 0 	Esperado: 0
+Entrada: [0 1] 	Predicción: 0 	Esperado: 0
+Entrada: [1 0] 	Predicción: 0 	Esperado: 0
+Entrada: [1 1] 	Predicción: 1 	Esperado: 1
+
+----------------------------------------
+
+OR Perceptron:
+Pesos: [[1. 1.]]
+Bias: [-0.5]
+Entrada: [0 0] 	Predicción: 0 	Esperado: 0
+Entrada: [0 1] 	Predicción: 1 	Esperado: 1
+Entrada: [1 0] 	Predicción: 1 	Esperado: 1
+Entrada: [1 1] 	Predicción: 1 	Esperado: 1
