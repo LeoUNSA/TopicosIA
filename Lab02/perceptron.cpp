@@ -63,7 +63,7 @@ int main() {
   srand(time(0));
   vector<vector<int>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
   vector<int> andTargets = {0, 0, 0, 1};
-  vector<int> orTargets = {0, 1, 1, 1};
+  vector<int> orTargets = {1, 1, 1, 0};
 
   cout << "AND Perceptron:\n";
   Perceptron andPerceptron(2);
