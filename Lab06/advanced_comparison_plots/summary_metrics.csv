@@ -1,0 +1,3 @@
+Modelo,Train Accuracy,Test Accuracy,Final Loss,Tiempo/Época (s)
+Modelo Base (sin regularización),76.47%,76.14%,0.9203,20.34
+Modelo con L2 + Dropout,40.16%,70.23%,1.7408,21.93
