@@ -121,7 +121,6 @@ public:
           backward(Y[j]);
         }
 
-        // Actualizar pesos
         updateWeights();
       }
 
@@ -273,7 +272,7 @@ private:
     }
   }
 
-  // Implementación original de SGD como método privado
+  // SGD
   void updateWeightsSGD() {
     for (size_t i = 0; i < weights.size(); ++i) {
       for (int j = 0; j < layer_sizes[i + 1]; ++j) {
@@ -286,24 +285,23 @@ private:
       }
     }
   }
-  double gamma_rmsprop = 0.9;    // Factor de decaimiento para RMSProp
-  double epsilon_rmsprop = 1e-8; // Pequeña constante para estabilidad numérica  
+  double gamma_rmsprop = 0.9;    // Factor de decaimiento - RMSProp
+  double epsilon_rmsprop = 1e-8; 
   vector<vector<vector<double>>>
-      m; // Promedio de los gradientes (primer momento)
+      m; // Cuadrado gradientes primer momento
   vector<vector<vector<double>>>
-      v; // Promedio de los cuadrados de los gradientes (segundo momento)
+      v; // Cuadrado gradientes segundo momento
   vector<int> layer_sizes;
   vector<vector<vector<double>>> weights;
   vector<vector<double>> biases, outputs, errors;
   vector<vector<vector<double>>>
-      squared_gradients; // Para almacenar los promedios de los cuadrados de los
-                         // gradientes
+      squared_gradients; 
   Activation hidden_act, output_act;
   double learning_rate;
   int batch_size;
   double beta1 = 0.9;         // Factor de decaimiento para el primer momento
   double beta2 = 0.999;       // Factor de decaimiento para el segundo momento
-  double epsilon_adam = 1e-8; // Pequeña constante para estabilidad numérica
+  double epsilon_adam = 1e-8; // Constante de estabilidad
   void initializeAdam() {
     m.clear();
     v.clear();
@@ -325,20 +323,18 @@ private:
               errors[i][j] * ((i == 0) ? outputs[i][j] : outputs[i - 1][k]);
           gradient /= batch_size;
 
-          // Actualizar estimaciones del primer y segundo momento
+          // Actualizacion Momento
           m[i][j][k] = beta1 * m[i][j][k] + (1 - beta1) * gradient;
           v[i][j][k] = beta2 * v[i][j][k] + (1 - beta2) * gradient * gradient;
 
-          // Calcular corrección de sesgo
+          // Correccion
           double m_hat = m[i][j][k] / (1 - pow(beta1, t));
           double v_hat = v[i][j][k] / (1 - pow(beta2, t));
 
-          // Actualizar los pesos
           weights[i][j][k] -=
               learning_rate * m_hat / (sqrt(v_hat) + epsilon_adam);
         }
 
-        // Para los biases
         double bias_gradient = errors[i][j] / batch_size;
         biases[i][j] -= learning_rate * bias_gradient;
       }
@@ -376,18 +372,14 @@ private:
           double gradient =
               errors[i][j] * ((i == 0) ? outputs[i][j] : outputs[i - 1][k]);
           gradient /= batch_size;
-
-          // Actualizar la media móvil de los cuadrados de los gradientes
           squared_gradients[i][j][k] =
               gamma_rmsprop * squared_gradients[i][j][k] +
               (1 - gamma_rmsprop) * gradient * gradient;
 
-          // Actualizar los pesos
                     weights[i][j][k] -= learning_rate * gradient / 
                                        (sqrt(squared_gradients[i][j][k]) + epsilon_rmsprop);
         }
 
-        // Para los biases
         double bias_gradient = errors[i][j] / batch_size;
         biases[i][j] -= learning_rate * bias_gradient;
       }
@@ -475,49 +467,7 @@ private:
       }
     }
   }
-  /*
-  void updateWeights() {
-    for (size_t i = 0; i < weights.size(); ++i) {
-      for (int j = 0; j < layer_sizes[i + 1]; ++j) {
-        for (int k = 0; k < layer_sizes[i]; ++k) {
-          double gradient =
-              errors[i][j] * ((i == 0) ? outputs[i][j] : outputs[i - 1][k]);
-          weights[i][j][k] -= learning_rate * gradient / batch_size;
-        }
-        biases[i][j] -= learning_rate * errors[i][j] / batch_size;
-      }
-    }
-  }
-*/
 };
-/*
-int main() {
-  try {
-    cout << "Cargando MNIST..." << endl;
-    auto train_X = readMnistImg("files/archive/train-images.idx3-ubyte");
-    auto train_y = readMnistLabels("files/archive/train-labels.idx1-ubyte");
-    auto test_X = readMnistImg("files/archive/t10k-images.idx3-ubyte");
-    auto test_y = readMnistLabels("files/archive/t10k-labels.idx1-ubyte");
-
-    cout << "Entrenando MLP" << endl;
-    MLP mlp({784, 128, 64, 10}, MLP::RELU, MLP::SOFTMAX, 0.1, 64);
-
-    // Epocas - TargetAcc
-    mlp.train(train_X, train_y, 200, 0.95, "trainingLog.csv");
-
-    double accuracy = mlp.evaluate(test_X, test_y);
-    cout << "\nPrecisión en test: " << accuracy * 100 << "%" << endl;
-
-    mlp.save_weights("modelWeights.txt");
-
-  } catch (const exception &e) {
-    cerr << "Error: " << e.what() << endl;
-    return 1;
-  }
-
-  return 0;
-}
-*/
 int main() {
     try {
         cout << "Cargando MNIST..." << endl;
@@ -527,7 +477,7 @@ int main() {
         auto test_y = readMnistLabels("files/archive/t10k-labels.idx1-ubyte");
 
         cout << "Entrenando MLP con Adam" << endl;
-        MLP mlp_adam({784, 128, 64, 10}, MLP::RELU, MLP::SOFTMAX, 0.001, 64, MLP::ADAM);
+        MLP mlp_adam({784, 256, 128, 10}, MLP::RELU, MLP::SOFTMAX, 0.0005, 64, MLP::ADAM);
         mlp_adam.train(train_X, train_y, 200, 0.95, "trainingLogAdam.csv");
         double accuracy_adam = mlp_adam.evaluate(test_X, test_y);
         cout << "\nPrecisión en test (Adam): " << accuracy_adam * 100 << "%" << endl;
